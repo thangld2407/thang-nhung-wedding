@@ -344,32 +344,6 @@
       });
   }
 
-      /*------------------------------------------
-    = MENU ACCESSBILITY
-    -------------------------------------------*/
-    $('.btn-menu-open').click(function() {
-      $('ul.list-menu-icon').css('opacity','1');
-      $('ul.list-menu-icon').css('pointer-events','');
-      $('.btn-menu-close').show();
-      $('.btn-menu-open').hide();
-  })
-  $('.btn-menu-close').click(function() {
-      $('ul.list-menu-icon').css('opacity','0');
-      $('ul.list-menu-icon').css('pointer-events','none');
-      $('.btn-menu-open').show();
-      $('.btn-menu-close').hide();
-  })
-  setTimeout(() => {
-      $('.btn-menu-open').hide();
-      $('.btn-menu-close').show();
-      $('ul.list-menu-icon').css('opacity','1');
-  }, 3000); 
-  $( window ).on("load", function(){
-		if($('.bii-logo').length > 0){
-			$('#menu-access').css('bottom','278px');
-			document.querySelector('style').textContent += "@media (max-width: 799px){#menu-access{bottom: 238px!important;}}"
-		} 
-	})
   function shakeTooltip(){
       var arrTooltip = $('ul.list-menu-icon').children();
       arrTooltip.each(function(index) {
@@ -386,12 +360,6 @@
               }
           }, index*5000); 
       });   
-  }
-  if($('#menu-access').length >0){
-    setTimeout(() => {
-        shakeTooltip();
-        myInterval = setInterval(shakeTooltip, 20000);
-    }, 3000);
   }
   $('.btn-menu-close').click(function(){
       $('tooltiptext').css('visibility','');

@@ -152,3 +152,9 @@
         font-size: 14px;
     }
 }
+
+.story-text {
+    p {
+        text-align: justify !important;
+    }
+}

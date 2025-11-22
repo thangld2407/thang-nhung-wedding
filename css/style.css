@@ -3064,7 +3064,7 @@ button{
   @media only screen and (min-width:300px) and (max-width:479px){
     /*Header Area*/
       .header-caption-heading {
-          font-size: 40px;
+          font-size: 36px;
           line-height: 52px;
       }
       .header-content h3{font-size:24px;}
@@ -3926,3 +3926,5 @@ a.text-logo h1{
          top: 62px!important;
      }
  }
+
+ 
