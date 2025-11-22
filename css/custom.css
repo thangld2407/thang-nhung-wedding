@@ -1,0 +1,154 @@
+.bii-footer {
+    display: none !important;
+}
+
+.bii-logo {
+    display: none !important;
+}
+
+#menu-access {
+    display: none !important;
+}
+
+.btn-menu-open {
+    display: none !important;
+}
+
+/* Donate Section Styles */
+.donate-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.donate-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.donate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.donate-title {
+    font-family: 'Playball', cursive;
+    font-size: 32px;
+    color: #ff4061;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.donate-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code-container {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.qr-code-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border: 3px solid #ff4061;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.bank-info {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.bank-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.bank-info strong {
+    color: #555;
+    min-width: 130px;
+    display: inline-block;
+}
+
+.bank-info span {
+    color: #ff4061;
+    font-weight: 600;
+}
+
+.copy-icon {
+    color: #999;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.copy-icon:hover {
+    color: #ff4061;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.copy-icon:active {
+    transform: scale(0.9);
+}
+
+.btn-copy {
+    background-color: #ff4061;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(255, 64, 97, 0.3);
+}
+
+.btn-copy:hover {
+    background-color: #e63956;
+    box-shadow: 0 5px 15px rgba(255, 64, 97, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-copy i {
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donate-card {
+        margin-bottom: 30px;
+    }
+
+    .donate-title {
+        font-size: 26px;
+    }
+
+    .qr-code-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .bank-info p {
+        font-size: 14px;
+    }
+
+    .btn-copy {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
